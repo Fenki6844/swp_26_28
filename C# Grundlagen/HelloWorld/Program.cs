@@ -26,5 +26,6 @@ class Program
         {
             Console.WriteLine("Die Eingabe ist ein String.");
         }
+
     }
 }
