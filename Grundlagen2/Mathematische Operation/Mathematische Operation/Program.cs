@@ -4,6 +4,10 @@ class Program
 {
     static void Main()
     {
+        Console.WriteLine("=======================================");
+        Console.WriteLine("Willkommen zum mathematischen Programm!");
+        Console.WriteLine("=======================================");
+        Console.WriteLine("Zum beenden des Programms drücken Sie eine beliebige Taste.");
         Console.Write("Geben Sie eine natürliche Zahl ein: ");
         int zahl = Convert.ToInt32(Console.ReadLine());
 
