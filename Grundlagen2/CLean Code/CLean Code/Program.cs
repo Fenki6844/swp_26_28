@@ -4,30 +4,36 @@ class Program
 {
     static void Main()
     {
-        Console.Write("Geben Sie einen Wert ein: ");
-        string eingabe = Console.ReadLine();
+        Console.Write("Geben Sie eine natürliche Zahl ein: ");
+        int zahl = Convert.ToInt32(Console.ReadLine());
 
-        if (int.TryParse(eingabe, out int ganzzahl))
+        Console.WriteLine("1) Quadrat");
+        Console.WriteLine("2) Wurzel");
+        Console.WriteLine("3) Fakultät");
+
+        Console.Write("Ihre Auswahl: ");
+        int auswahl = Convert.ToInt32(Console.ReadLine());
+
+        if (auswahl == 1)
         {
-            Console.WriteLine("Die Eingabe ist ein Integer.");
-            Console.WriteLine($"Wert: {ganzzahl}");
-            return;
+            Console.WriteLine("Das Quadrat ist: " + zahl * zahl);
         }
 
-        if (bool.TryParse(eingabe, out bool wahrheitswert))
+        if (auswahl == 2)
         {
-            Console.WriteLine("Die Eingabe ist ein Bool.");
-            Console.WriteLine($"Wert: {wahrheitswert}");
-            return;
+            Console.WriteLine("Die Wurzel ist: " + Math.Sqrt(zahl));
         }
 
-        if (double.TryParse(eingabe, out double kommazahl))
+        if (auswahl == 3)
         {
-            Console.WriteLine("Die Eingabe ist eine rationale Zahl (double).");
-            Console.WriteLine($"Wert: {kommazahl}");
-            return;
-        }
+            int ergebnis = 1;
 
-        Console.WriteLine("Die Eingabe ist ein String.");
+            for (int i = 1; i <= zahl; i++)
+            {
+                ergebnis = ergebnis * i;
+            }
+
+            Console.WriteLine("Die Fakultät ist: " + ergebnis);
+        }
     }
 }
