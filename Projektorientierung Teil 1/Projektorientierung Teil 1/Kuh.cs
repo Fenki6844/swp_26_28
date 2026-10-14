@@ -21,7 +21,7 @@ namespace Projektorientierung_Teil_1
         }
 
         // Constructor for the Kuh class
-        public Kuh(string name, string colour)
+        public Kuh(string name, string colour) //impliziert constructor to initialize the name and colour of the cow
         {
             _name = name;
             _colour = colour;
