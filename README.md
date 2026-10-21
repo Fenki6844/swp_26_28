@@ -1,424 +1,87 @@
-Softwareentwicklung & Projektmanagement
-📌 Projektübersicht
-Projektname: [Projektname]
-Status: In Entwicklung / Beta / Stable
-Version: vX.Y.Z
-Verantwortlich: [Team / Person]
+C# Schulprojekte
 
-Dieses Projekt dient der Entwicklung und Verwaltung von [kurze Beschreibung der Software bzw. des Produkts].
+Beschreibung
 
-Ziel des Projekts ist es, eine zuverlässige, wartbare und erweiterbare Softwarelösung zu entwickeln und gleichzeitig einen strukturierten Entwicklungs- und Projektmanagementprozess sicherzustellen.
+Dieses Repository enthält verschiedene Übungs- und Schulprojekte, die im Rahmen des Programmierunterrichts erstellt wurden. Der Schwerpunkt liegt auf den Grundlagen der Programmierung mit C# sowie auf objektorientierter Programmierung und dem Testen von Code.
 
-🎯 Ziele
-Die wichtigsten Projektziele sind:
+Projekte und Inhalte
 
-Entwicklung einer stabilen und benutzerfreundlichen Software
+Ordner
 
-Klare und nachvollziehbare Projektstruktur
+Beschreibung
 
-Saubere Trennung von Entwicklung, Testing und Deployment
+17.09.26
 
-Versionierung und nachvollziehbare Änderungen
+Übungen und Inhalte aus dem Unterricht
 
-Automatisierte Tests und Qualitätssicherung
+C# Grundlagen
 
-Transparente Aufgaben- und Fortschrittsverwaltung
+Grundlagen der C#-Programmierung
 
-Dokumentation technischer und organisatorischer Entscheidungen
+Grundlagen
 
-Nachhaltige und wartbare Codebasis
+Allgemeine Programmierübungen
 
-🏗️ Projektstruktur
-project/
-├── src/                    # Quellcode
-│   ├── components/         # Wiederverwendbare Komponenten
-│   ├── services/           # Geschäftslogik und Services
-│   ├── models/             # Datenmodelle
-│   └── utils/              # Hilfsfunktionen
-│
-├── tests/                  # Automatisierte Tests
-│   ├── unit/
-│   ├── integration/
-│   └── e2e/
-│
-├── docs/                   # Projektdokumentation
-│   ├── architecture/
-│   ├── decisions/
-│   └── requirements/
-│
-├── config/                 # Konfiguration
-├── scripts/                # Entwicklungs- und Deployment-Skripte
-├── .github/                # CI/CD und GitHub-Konfiguration
-├── .env.example            # Beispiel für Umgebungsvariablen
-├── README.md               # Projektdokumentation
-└── LICENSE                 # Lizenz
+Grundlagen2
 
-Die tatsächliche Struktur kann je nach verwendeten Technologien angepasst werden.
+Weitere Übungen zu den Programmiergrundlagen
 
-🛠️ Technologien
-Bereich	Technologie
-Programmiersprache	[z. B. TypeScript]
-Frontend	[z. B. React]
-Backend	[z. B. Node.js]
-Datenbank	[z. B. PostgreSQL]
-API	[z. B. REST / GraphQL]
-Testing	[z. B. Jest / Playwright]
-Versionskontrolle	Git
-CI/CD	[z. B. GitHub Actions]
-Deployment	[z. B. Docker / Kubernetes]
+Kuh-Testprojekt
 
-🚀 Installation
-Voraussetzungen
-Folgende Software muss installiert sein:
+Projekt zur Implementierung und zum Testen der Klasse Kuh
 
-Git
+Mathematische operation neu
 
-[Runtime, z. B. Node.js 22+]
+Übungen zu mathematischen Operationen
 
-[Package Manager, z. B. npm / pnpm]
+Projektorientierung Teil 1
 
-[Docker, falls erforderlich]
+Übungen zur projektorientierten Softwareentwicklung
 
-Repository klonen
-git clone <repository-url>
-cd <project-directory>
+Uittest Kuh
 
-Abhängigkeiten installieren
-npm install
+Unit-Tests für das Kuh-Projekt
 
-Umgebungsvariablen konfigurieren
-cp .env.example .env
+Verwendete Technologien
 
-Anschließend müssen die benötigten Werte in .env eingetragen werden.
+C# – Programmiersprache
 
-Anwendung starten
-Entwicklungsumgebung:
+.NET – Entwicklungsplattform für C#-Anwendungen
 
-npm run dev
+Git und GitHub – Versionsverwaltung und Zusammenarbeit
 
-Produktions-Build:
+Unit-Tests – Überprüfung der Funktionalität des Codes
 
-npm run build
+Lernziele
 
-Produktionsstart:
+Grundlagen der C#-Programmierung verstehen und anwenden
 
-npm start
+Klassen, Objekte und Konstruktoren erstellen
 
-🧪 Testing
-Vor einem Pull Request müssen alle relevanten Tests erfolgreich durchlaufen.
+Attribute und Properties verwenden
 
-Unit Tests
-npm test
+Fehlerbehandlung mit Exceptions umsetzen
 
-Test Coverage
-npm run test:coverage
+Unit-Tests schreiben und ausführen
 
-End-to-End Tests
-npm run test:e2e
+Änderungen mit Git verwalten und über Pull Requests einreichen
 
-Neue Features und Fehlerbehebungen sollten nach Möglichkeit durch entsprechende Tests abgedeckt werden.
+Projektbeispiel: Kuh
 
-🌿 Git-Workflow
-Für die Entwicklung wird ein Feature-basierter Git-Workflow verwendet.
+Im Kuh-Testprojekt wird eine Klasse Kuh entwickelt, die beispielsweise den Namen und die Farbe einer Kuh speichert.
 
-Branches
-main
-├── develop
-├── feature/<name>
-├── fix/<name>
-└── hotfix/<name>
+Dabei werden unter anderem Konstruktoren, Eigenschaften und die Validierung von Eingabedaten behandelt. Mit Unit-Tests wird überprüft, ob sich die Klasse wie erwartet verhält.
 
-Beispiel
-git checkout develop
-git checkout -b feature/user-authentication
+Verwendung
 
-Nach Abschluss der Entwicklung wird ein Pull Request erstellt.
+Repository auf den eigenen Computer klonen.
 
-Commit-Konvention
-Commits sollten verständlich und möglichst nach folgendem Schema aufgebaut sein:
+Das gewünschte Projekt in einer geeigneten Entwicklungsumgebung öffnen, beispielsweise Visual Studio.
 
-feat: Benutzerregistrierung hinzugefügt
-fix: Fehler bei der Passwortvalidierung behoben
-docs: README aktualisiert
-test: Tests für Authentifizierung ergänzt
-refactor: Auth-Service überarbeitet
-chore: Abhängigkeiten aktualisiert
+Den Code ausführen oder bearbeiten.
 
-🔀 Pull Requests
-Ein Pull Request sollte:
+Vorhandene Unit-Tests ausführen, um die Funktionalität zu überprüfen.
 
-eine klare Beschreibung der Änderung enthalten
+Hinweis
 
-das zugehörige Ticket bzw. Issue referenzieren
-
-relevante Tests enthalten
-
-keine unnötigen Änderungen enthalten
-
-die bestehenden Coding Standards einhalten
-
-erfolgreich durch die CI-Pipeline laufen
-
-Pull-Request-Checkliste
-[ ] Code kompiliert erfolgreich
-[ ] Tests sind erfolgreich
-[ ] Neue Funktionalität wurde getestet
-[ ] Dokumentation wurde aktualisiert
-[ ] Keine sensiblen Daten wurden committed
-[ ] Code Review wurde durchgeführt
-[ ] CI/CD Pipeline ist erfolgreich
-
-📋 Projektmanagement
-Die Arbeit wird über ein Ticketsystem organisiert.
-
-Ticket-Typen
-Feature – Neue Funktionalität
-
-Bug – Fehlerbehebung
-
-Task – Technische oder organisatorische Aufgabe
-
-Improvement – Verbesserung einer bestehenden Funktion
-
-Documentation – Dokumentationsänderung
-
-Prioritäten
-Priorität	Bedeutung
-P0	Kritisch – sofortige Bearbeitung
-P1	Hoch
-P2	Normal
-P3	Niedrig
-
-Workflow
-Backlog
-   ↓
-To Do
-   ↓
-In Progress
-   ↓
-Code Review
-   ↓
-Testing
-   ↓
-Done
-
-📅 Planung
-Die Entwicklung erfolgt iterativ.
-
-Sprint-Struktur
-Sprintdauer: [z. B. 2 Wochen]
-
-Ein Sprint umfasst:
-
-Sprint Planning
-
-Umsetzung der Aufgaben
-
-Code Reviews
-
-Testing
-
-Sprint Review
-
-Retrospektive
-
-Definition of Done
-Eine Aufgabe gilt als abgeschlossen, wenn:
-
-die Anforderungen umgesetzt wurden
-
-der Code getestet wurde
-
-Code Review abgeschlossen ist
-
-automatisierte Tests erfolgreich sind
-
-die Dokumentation bei Bedarf aktualisiert wurde
-
-die Änderung in die Zielumgebung integriert wurde
-
-🧩 Architektur
-Die Anwendung folgt grundsätzlich einer modularen Architektur.
-
-┌──────────────────────┐
-│      Frontend        │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│       API            │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│ Business Logic       │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│ Database / Services  │
-└──────────────────────┘
-
-Architekturentscheidungen werden unter docs/decisions/ dokumentiert.
-
-🔐 Sicherheit
-Sensible Informationen dürfen niemals direkt in das Repository eingecheckt werden.
-
-Dazu gehören beispielsweise:
-
-Passwörter
-
-API Keys
-
-Access Tokens
-
-Private Keys
-
-Produktionsdaten
-
-Zugangsdaten zu externen Diensten
-
-Stattdessen werden Umgebungsvariablen oder ein geeigneter Secret Manager verwendet.
-
-⚙️ CI/CD
-Bei jedem Pull Request werden automatisch relevante Prüfungen ausgeführt:
-
-Push / Pull Request
-        ↓
-   Build
-        ↓
-    Linting
-        ↓
-     Tests
-        ↓
- Security Checks
-        ↓
-    Code Review
-        ↓
-     Deploy
-
-Fehlgeschlagene CI-Prüfungen müssen vor dem Merge behoben werden.
-
-📦 Releases
-Versionen werden nach dem Schema Semantic Versioning vergeben:
-
-MAJOR.MINOR.PATCH
-
-Beispiel:
-
-1.4.2
-
-MAJOR – inkompatible Änderungen
-
-MINOR – neue, kompatible Funktionen
-
-PATCH – kompatible Fehlerbehebungen
-
-Release Notes werden unter CHANGELOG.md dokumentiert.
-
-📝 Dokumentation
-Weitere Dokumentation befindet sich unter:
-
-docs/
-├── architecture/       # Architektur
-├── decisions/          # Architekturentscheidungen
-├── requirements/       # Anforderungen
-├── api/                # API-Dokumentation
-└── deployment/         # Deployment
-
-Technische Entscheidungen sollten nachvollziehbar dokumentiert werden, insbesondere wenn mehrere mögliche Lösungen existieren.
-
-👥 Verantwortlichkeiten
-Bereich	Verantwortlich
-Projektmanagement	[Name / Rolle]
-Entwicklung	[Name / Team]
-Architektur	[Name / Rolle]
-Testing / QA	[Name / Team]
-DevOps	[Name / Team]
-Product Owner	[Name / Rolle]
-
-📊 Qualitätsstandards
-Der Code sollte folgende Anforderungen erfüllen:
-
-Lesbarkeit und Verständlichkeit
-
-Modularität
-
-Testbarkeit
-
-geringe technische Verschuldung
-
-konsistente Formatierung
-
-sinnvolle Fehlerbehandlung
-
-nachvollziehbare Commit-Historie
-
-angemessene Dokumentation
-
-Automatisierte Code-Formatierung und Linting sollten nach Möglichkeit Bestandteil der CI-Pipeline sein.
-
-🐛 Fehler melden
-Fehler werden über das Issue-System gemeldet.
-
-Ein Bug Report sollte mindestens enthalten:
-
-Beschreibung:
-[Was ist passiert?]
-
-Erwartetes Verhalten:
-[Was sollte passieren?]
-
-Tatsächliches Verhalten:
-[Was passiert stattdessen?]
-
-Schritte zur Reproduktion:
-1. ...
-2. ...
-3. ...
-
-Umgebung:
-- Betriebssystem:
-- Version:
-- Browser / Runtime:
-
-Weitere Informationen:
-[Logs, Screenshots etc.]
-
-📄 Lizenz
-Dieses Projekt steht unter der Lizenz:
-
-[MIT / Apache 2.0 / Proprietär / andere]
-
-Siehe LICENSE für weitere Informationen.
-
-📞 Kontakt
-Projekt: [Projektname]
-Team: [Teamname]
-Kontakt: [Kontaktmöglichkeit]
-
-📌 Aktueller Projektstatus
-Bereich	Status
-Anforderungen	🟡 In Bearbeitung
-Architektur	🟡 In Bearbeitung
-Entwicklung	🟡 In Bearbeitung
-Testing	🔴 Ausstehend
-CI/CD	🔴 Ausstehend
-Dokumentation	🟡 In Bearbeitung
-Release	🔴 Ausstehend
-
-Nächste Schritte:
-
-Anforderungen finalisieren
-
-Architektur festlegen
-
-Entwicklungsumgebung einrichten
-
-Basisfunktionalität implementieren
-
-Tests ergänzen
-
-CI/CD konfigurieren
-
-Erste Version veröffentlichen
+Dieses Repository dient hauptsächlich zu Lern- und Übungszwecken im Rahmen des Programmierunterrichts.
